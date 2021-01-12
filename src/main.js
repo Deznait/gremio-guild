@@ -4,9 +4,9 @@ import Vue from "vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
 // Vue Font-Awesome
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(faUserSecret);
 
@@ -31,13 +31,13 @@ new Vue({
     FontAwesomeIcon,
     methods: {
         init() {
-            store.dispatch("oauth/getToken", null, { root: true })
+            store.dispatch("oauth/getToken", null, { root: true });
         }
     },
     created() {
-        this.init()
-        console.log("process.env:")
-        console.log(process.env)
+        this.init();
+        console.log("process.env:");
+        console.log(process.env);
     },
     render: h => h(App)
-}).$mount("#app")
+}).$mount("#app");
