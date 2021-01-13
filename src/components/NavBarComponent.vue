@@ -18,7 +18,7 @@
                 >
                     <router-link
                         class="nav-link"
-                        :to="{ name: 'HomePage' }"
+                        :to="{ name: 'Home' }"
                         v-on:click.native="changeTabIndex(1)"
                         >Home</router-link
                     >
@@ -29,7 +29,7 @@
                 >
                     <router-link
                         class="nav-link"
-                        :to="{ name: 'AboutPage' }"
+                        :to="{ name: 'About' }"
                         v-on:click.native="changeTabIndex(2)"
                     >
                         About
