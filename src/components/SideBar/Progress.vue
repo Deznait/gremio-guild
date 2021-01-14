@@ -15,8 +15,12 @@ export default {
         // send a POST request
         axios({
             method: "get",
-            url:
-                "https://raider.io//api/v1/guilds/profile"
+            url: "https://raider.io/api/v1/guilds/profile",
+            params: {
+                region: "eu",
+                realm: "sanguino",
+                name: "gremio de nodrassil"
+            }
         }).then(
             response => {
                 console.log(response);
