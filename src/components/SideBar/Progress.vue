@@ -15,7 +15,8 @@ export default {
         // send a POST request
         axios({
             method: "get",
-            url: "https://www.wowprogress.com/guild/eu/sanguino/Gremio+de+Nordrassil/json_rank/",
+            url:
+                "https://raider.io//api/v1/guilds/profile"
         }).then(
             response => {
                 console.log(response);

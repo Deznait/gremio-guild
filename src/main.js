@@ -26,7 +26,7 @@ import router from "./router";
 import store from "./store";
 
 // Global CSS
-import "./assets/styles/main.scss";
+import "./assets/styles/main.sass";
 
 import { setupComponents } from "./config/setup-components";
 setupComponents(Vue);
